@@ -1,0 +1,32 @@
+<div class="container">
+
+  <div class="card-body">
+    <h4 class="card-title">El Clima</h4>
+
+    <div class="row">
+
+      <div class="col-lg-4">
+
+        <img src="assets/icono-tiempo.png" width="250px" height="250px" alt="">
+
+      </div>
+
+      <div class="col-lg-6">
+
+        <input type="text" class="form-control" [(ngModel)]="ciudad">
+        <button (click)="mostrarClima()" class="btn btn-primary btn-lg btn-block mt-4">BUSCAR</button>
+
+        <h3><b>TEMPERATURA:</b>{{temperatura  | number: '1.1-1'}}</h3>
+        <h3><b>HUMEDAD:</b></h3>
+
+      </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
